@@ -1,0 +1,48 @@
+.breadcrums {
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e8e8e9;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    padding: 0 8px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  &__link::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #989699;
+    position: absolute;
+    left: 0;
+  }
+
+  &__link.active::before {
+    width: 1px;
+    background-color: #d0aa8c;
+  }
+
+  &__link.active a {
+    color: #d0aa8c;
+  }
+
+  &__link:first-child::before {
+    display: none;
+  }
+
+  &__link a {
+    color: #332f36;
+    font-size: 12px;
+  }
+
+  &__link a:hover,
+  &__link a:focus {
+    color: #d0aa8c;
+  }
+}

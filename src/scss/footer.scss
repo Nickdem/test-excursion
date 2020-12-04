@@ -1,0 +1,142 @@
+.footer {
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+
+  &__content {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  &__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    height: 1px;
+    background-color: #d0aa8c;
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__list li{
+    margin-bottom: 5px;
+  }
+
+  &__list a{
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: #a5a4a3;
+  }
+
+  &__list a:hover,
+  &__list a:focus {
+    color: #ffffff;
+  }
+
+  &__copy {
+    color: #525251;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+  }
+
+  &__info-btn {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #a7a6a4;
+    text-align: center;
+    padding-bottom: 7px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #a7a6a4;
+  }
+
+  &__info-btn:hover,
+  &__info-btn:focus {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &__info-contacts {
+    background-color: rgba(255, 255, 255, 0.259);
+    padding: 10px 20px 10px 18px;
+  }
+
+  &__info-link {
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  &__info-link a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    color: #ffffff;
+  }
+
+  &__info-link span {
+    font-size: 10px;
+    color: #9a9a9a;
+  }
+
+  &__info-link:hover span,
+  &__info-link:focus span {
+    color: #ffffff;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__box::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 130px;
+    background-color: #747176;
+    position: absolute;
+    left: -100px;
+    top: 70px;
+  }
+
+  &__box:first-child::before {
+    display: none;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__info::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 202px;
+    background-color: #747176;
+    position: absolute;
+    left: -100px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+  }
+}
