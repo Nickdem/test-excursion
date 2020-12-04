@@ -65,8 +65,8 @@
   }
 
   &__top-link span {
-    font-size: 11px;
-    letter-spacing: 1px;
+    font-size: 10px;
+    letter-spacing: .7px;
     color: #d0aa8c;
     position: relative;
     padding-right: 45px;
@@ -118,6 +118,10 @@
   &__bottom {
     background: #2f2c34;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,48,55,1) 50%, rgba(68,60,63,1) 100%);
+  }
+
+  &__nav-menu {
+    display: none;
   }
 
   &__nav-list {

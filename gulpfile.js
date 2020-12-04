@@ -43,22 +43,19 @@ function dev() {
 
   watch('src/**.html', series(html)).on('change', serve.reload)
   watch('src/scss/**.scss', series(scss)).on('change', serve.reload)
+  watch('src/js/**.js', series(copyJs)).on('change', serve.reload)
 }
 
-function copy() {
-  // let buildHtml = gulp.src('app/**/*.html')
-  //   .pipe(gulp.dest('dist'));
-  // let BuildCss = gulp.src('app/css/**/*.css')
-  //   .pipe(gulp.dest('dist/css'));
-  // let BuildJs = gulp.src('app/js/**/*.js')
-  //   .pipe(gulp.dest('dist/js'));
-  // let BuildFonts = gulp.src('app/fonts/**/*.*')
-  //   .pipe(gulp.dest('dist/fonts'));
-
+function copyImg() {
   return src('src/img/**/*.*')
     .pipe(dest('dist/img'));   
 };
 
-exports.build = series(clear, copy, css, scss, html)
-exports.dev = series(clear, copy, css, scss, html, dev)
+function copyJs() {
+  return src('src/js/*.js')
+    .pipe(dest("dist/js"));
+}
+
+exports.build = series(clear, copyImg, css, scss, html, copyJs)
+exports.dev = series(clear, copyImg, css, scss, html, copyJs, dev)
 exports.clear = clear

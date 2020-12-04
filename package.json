@@ -15,8 +15,8 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0",
-    "normalize.css": "^8.0.1",
-    "gulp-htmlmin": "^5.0.1"
+    "normalize.css": "^8.0.1"
   }
 }
