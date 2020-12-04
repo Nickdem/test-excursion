@@ -42,6 +42,7 @@
     font-size: 14px;
     letter-spacing: .5px;
     color: #a5a4a3;
+    transition: all .3s;
   }
 
   &__copy {
@@ -62,6 +63,7 @@
     padding-bottom: 7px;
     margin-bottom: 12px;
     border-bottom: 2px solid #a7a6a4;
+    transition: all .3s;
   }
 
   &__info-btn:hover,
@@ -90,6 +92,7 @@
   &__info-link span {
     font-size: 10px;
     color: #9a9a9a;
+    transition: all .3s;
   }
 
   &__info-link:hover span,
@@ -138,6 +141,7 @@
   &__social div {
     background-repeat: no-repeat;
     height: 28px;
+    transition: all .3s;
   }
 
   &__social .inst {
