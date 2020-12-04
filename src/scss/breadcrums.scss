@@ -28,10 +28,6 @@
     background-color: #d0aa8c;
   }
 
-  &__link.active a {
-    color: #d0aa8c;
-  }
-
   &__link:first-child::before {
     display: none;
   }
@@ -42,7 +38,8 @@
   }
 
   &__link a:hover,
-  &__link a:focus {
+  &__link a:focus,
+  &__link.active a {
     color: #d0aa8c;
   }
 }

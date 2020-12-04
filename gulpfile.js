@@ -43,7 +43,6 @@ function dev() {
 
   watch('src/**.html', series(html)).on('change', serve.reload)
   watch('src/scss/**.scss', series(scss)).on('change', serve.reload)
-  watch('src/js/**.js', series(copyJs)).on('change', serve.reload)
 }
 
 function copyImg() {

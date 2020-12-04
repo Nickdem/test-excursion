@@ -20,24 +20,22 @@
     position: relative;
   }
 
-  &__title::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 80px;
-    top: 50%;
-    left: 0;
-    background-color: #d0aa8c;
-  }
-
+  &__title::before,
   &__title::after {
     content: '';
     position: absolute;
     height: 2px;
     width: 80px;
     top: 50%;
-    right: 0;
     background-color: #d0aa8c;
+  }
+
+  &__title::before {
+    left: 0;
+  }
+
+  &__title::after {
+    right: 0;
   }
 
   &__desc {

@@ -44,11 +44,6 @@
     color: #a5a4a3;
   }
 
-  &__list a:hover,
-  &__list a:focus {
-    color: #ffffff;
-  }
-
   &__copy {
     color: #525251;
     font-size: 12px;
@@ -98,7 +93,9 @@
   }
 
   &__info-link:hover span,
-  &__info-link:focus span {
+  &__info-link:focus span,
+  &__list a:hover,
+  &__list a:focus {
     color: #ffffff;
   }
 
@@ -106,14 +103,18 @@
     position: relative;
   }
 
-  &__box::before {
+  &__box::before,
+  &__info::before {
     content: '';
     display: block;
     width: 1px;
-    height: 130px;
     background-color: #747176;
     position: absolute;
     left: -100px;
+  }
+
+  &__box::before {
+    height: 130px;
     top: 70px;
   }
 
@@ -126,13 +127,7 @@
   }
 
   &__info::before {
-    content: '';
-    display: block;
-    width: 1px;
     height: 202px;
-    background-color: #747176;
-    position: absolute;
-    left: -100px;
   }
 
   &__social {
@@ -140,11 +135,14 @@
     justify-content: space-between;
   }
 
+  &__social div {
+    background-repeat: no-repeat;
+    height: 28px;
+  }
+
   &__social .inst {
     background-image: url(/img/inst.png);
-    background-repeat: no-repeat;
     width: 28px;
-    height: 28px;
   }
 
   &__social .inst:hover,
@@ -154,9 +152,7 @@
 
   &__social .fb {
     background-image: url(/img/fb.png);
-    background-repeat: no-repeat;
     width: 27px;
-    height: 28px;
   }
 
   &__social .fb:hover,
@@ -166,9 +162,7 @@
 
   &__social .gp {
     background-image: url(/img/gp.png);
-    background-repeat: no-repeat;
     width: 27px;
-    height: 28px;
   }
 
   &__social .gp:hover,
@@ -178,9 +172,7 @@
 
   &__social .li {
     background-image: url(/img/li.png);
-    background-repeat: no-repeat;
     width: 28px;
-    height: 28px;
   }
 
   &__social .li:hover,
